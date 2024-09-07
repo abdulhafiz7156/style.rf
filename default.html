@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <title>Восстановления пароля</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Default</title>
 </head>
 <body>
     <header class="header">
@@ -51,25 +51,7 @@
         </div>
     </header>
     <main>
-        <section class="registration__section">
-            <div class="registration__section__title flex justify-center">
-                <h1 class="title">Восстановления пароля</h1>
-            </div>
-            <div class="registration__section__form">
-                <form action="">
-                    <div class="flex flex-column">
-                        <p><a href="#">Введите e-mail, указанный при регистрации — мы отправим вам ссылку для восстановления пароля</a></p>
-                        <input type="email" class="default__input" placeholder="E-mail">
-                    </div>
-                    <button class="button__with__bg">Отправить</button>
-                    <h6 class="text-center">Нажимая кнопку “Отправить”, вы принимаете условия&nbsp;<a href="">Политики конфиденциальности</a></h6>
-                </form>
-            </div>
-            <div class="registration__section__leave flex justify-center">
-                <p><a href="">Я вспомнил пароль! &nbsp;</a></p>
-                <p><a href="">Вернуться</a></p>
-            </div>
-        </section>
+        <section></section>
         <section class="connect__section">
             <div class="container flex flex-column">
                 <div class="connect__section__title flex">
@@ -112,84 +94,6 @@
             Все права защищены. Полное или частичное копирование материалов сайта без согласования с редакцией запрещено.
         </p>
     </footer>
-
-    <script src="js/index.js"></script>
-
-
-    <style>
-        .registration__section__title {
-            margin: 50px 0 100px 0;
-        }
-
-        .registration__section__form {
-            width: 60%;
-            margin: 0 auto;
-        }
-
-        .registration__section__form button {
-            width: 50%;
-            margin: 0 auto;
-            font-family: "Playfair Display", serif;
-            margin-top: 50px;
-        }
-
-        .registration__section__form h6{
-            color: #636366;
-            font-size: 13px;
-            margin-top: 10px;
-        }
-
-        .registration__section__leave {
-            margin-top: 60px;
-        }
-
-        .registration__section__form form p {
-            text-align: left;
-            color: #636366;
-            opacity: 80%;
-            margin-top: 5px;
-        }
-
-        .registration__section__form div {
-            gap: 20px;
-        }
-
-        .registration__section p,
-        .registration__section a{
-            font-family: "Inter", sans-serif;
-            color: #313131;
-        }
-
-
-        /* этот класс используется для инпута в случаи данные некорректны */
-        .active__input {
-            border: 2px solid #C62925;
-        }
-
-        @media (max-width: 768px) {
-            .registration__section__form {
-                padding: 10px;
-                width: auto;
-                margin: 0 auto;
-            }
-
-            .registration__section__form button {
-                width: 100%;
-            }
-
-            .title {
-                font-size: 48px;
-            }
-
-            .registration__section__title {
-                margin-bottom: 20px;
-            }
-            .title {
-                font-size: 35px;
-                text-align: center  ;
-            }
-        }
-    </style>
-
+<script src="js/index.js"></script>
 </body>
 </html>

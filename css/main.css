@@ -23,6 +23,7 @@ li{
 a {
     text-decoration: none;
     cursor: pointer;
+    color: #fff;
 }
 
 
@@ -74,6 +75,10 @@ button {
 
 .flex-column {
     flex-direction: column;
+}
+
+.relative {
+    position: relative;
 }
 
 .container {
@@ -293,6 +298,14 @@ footer p {
     opacity: 80%;
     font-size: 20px;
     margin-top: 40px;
+    flex: 1;
+
+}
+
+
+footer p a{
+    color: #1F1F1F;
+    text-decoration: revert;
 }
 
 .default__input {
