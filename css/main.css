@@ -308,14 +308,30 @@ footer p a{
     text-decoration: revert;
 }
 
+
+
+/* variables */
+
 .default__input {
-    background-color: transparent;
-    border: 1px solid #C62925;
-    border-radius: 50px;
-    padding: 16px 20px;
-    font-size: 20px;
-    color: #1F1F1F;
-    outline: none;
-    opacity: 60%;
-    width: 100%;
+  background-color: transparent;
+  border: 1px solid #C62925;
+  border-radius: 50px;
+  padding: 16px 20px;
+  font-size: 20px;
+  color: #1F1F1F;
+  outline: none;
+  opacity: 60%;
+  width: 100%;
+}
+
+
+/*-VARIABLES-*/
+.main__title {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+
+.hidden {
+  display: none;
 }

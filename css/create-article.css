@@ -1,25 +1,116 @@
-input[type="file"] {
-    display: block;
-}
 .imageThumb {
-    max-height: 75px;
-    border: 2px solid;
-    padding: 1px;
-    cursor: pointer;
+  max-width: 233px;
+  opacity: 60%;
+  width: 100%;
 }
+
 .pip {
-    display: inline-block;
-    margin: 10px 10px 0 0;
+  display: inline-block;
+  margin: 10px 10px 0 0;
 }
+
 .remove {
-    display: block;
-    background: #444;
-    border: 1px solid black;
-    color: white;
-    text-align: center;
-    cursor: pointer;
+  display: block;
+  background: #444;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
 }
+
 .remove:hover {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
+}
+
+.article-input {
+  background-color: white;
+  opacity: 100%;
+  border-radius: 20px;
+}
+
+.myInput {
+  display: flex;
+  padding-top: 30px;
+}
+
+.myInput > .label {
+  flex-basis: 20%;
+}
+
+.myInput > input, .myInput > textarea {
+  flex-basis: 60%;
+}
+
+.article-upload {
+  border: 1px solid #C62925;
+  border-radius: 100%;
+  width: 43px;
+  height: 43px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.article-upload label {
+  cursor: pointer;
+}
+
+.article-btn {
+  margin-top: 40px;
+  width: 233px;
+}
+
+.uploaded__file {
+  position: relative;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+
+.removeButton{
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: transparent;
+}
+
+.article-upload-sm {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .images {
+    grid-template-columns: 1fr 1fr;
+  }
+  .desc__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .myInput .label {
+    padding-bottom: 10px;
+  }
+  .myInput {
+    flex-direction: column;
+  }
+  .myInput:first-child {
+    align-items: start;
+  }
+  .article-upload-md {
+    display: none;
+  }
+  .article-upload-sm{
+    display: block;
+  }
 }
