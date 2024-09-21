@@ -1,0 +1,92 @@
+.search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+}
+
+.search__input {
+  position: relative;
+  width: 100%;
+}
+
+.search__input svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search__input input {
+  width: 100%;
+  padding: 13px 13px 13px 50px;
+}
+
+.search button {
+  background-color: transparent;
+}
+
+.cards {
+  padding-top: 39px;
+}
+
+.partners__card {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #1F1F1F;
+}
+
+.partners__card-content {
+  width: 100%;
+}
+
+.card__stars {
+  gap: 10px;
+}
+
+
+.card__location {
+  color: #1F1F1F;
+}
+
+.card__job {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.card__point {
+  font-family: "Playfair Display";
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  padding-bottom: 9px;
+}
+
+.card__description {
+  max-width: 595px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.card__portfolio {
+  width: 233px;
+  height: 155px;
+}
+
+.partner__card {
+  flex: 0 0 calc(25% - 20px);
+  user-select: none;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__contact-title {
+  padding-top: 30px;
+}
+
+.card svg {
+  fill: #1F1F1F;
+}

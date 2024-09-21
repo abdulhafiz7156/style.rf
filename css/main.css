@@ -335,3 +335,8 @@ footer p a{
 .hidden {
   display: none;
 }
+
+.items-center {
+  align-items: center;
+}
+
