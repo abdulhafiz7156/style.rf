@@ -52,6 +52,10 @@
   margin-left: 10px;
 }
 
+.article-upload svg {
+  cursor: pointer;
+}
+
 .article-upload label {
   cursor: pointer;
 }
