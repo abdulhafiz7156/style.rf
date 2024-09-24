@@ -158,6 +158,14 @@
     width: 253px;
 }
 
+.second__section__card-title .mobile {
+    display: none;
+}
+
+.first__block__nav__mobile {
+    display: none;
+}
+
 .second__section__card-mini img:first-child {
     margin-right: 15px;
 }

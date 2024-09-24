@@ -10,23 +10,32 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/media.css">
     <title>Style.rf</title>
+    <style>
+        @media (max-width: 768px) {
+            .slider-button {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
 <header class="header">
     <div class="container flex justify-between items-center">
         <div class="header__logo">
-            <img src="./images/logo.svg" alt="Logo">
+            <a href="index.html">
+                <img src="./images/logo.svg" alt="Logo">
+            </a>
         </div>
         <nav class="header__nav flex item-center">
             <ul class="flex">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Партнёры</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="news-best.html">Новости</a></li>
+                <li><a href="partners.html">Партнёры</a></li>
             </ul>
         </nav>
         <div class="header__actions flex item-center">
-            <a href="#" class="user-icon">
+            <a href="edit-profile.html" class="user-icon">
                 <img src="images/user.svg" alt="User Logo">
             </a>
             <div class="burger-menu" id="burgerMenu">
@@ -80,6 +89,14 @@
                 </div>
                 <div class="first__block__nav__small-block"></div>
             </div>
+            <div class="first__block__nav first__block__nav__mobile flex">
+                <div class="first__block__nav__small-block"></div>
+                <div class="first__block__nav__main-block">
+                    <p>СТИЛЬ</p></div>
+                <div class="first__block__nav__main-block">
+                    <p>МОДА</p></div>
+                <div class="first__block__nav__small-block"></div>
+            </div>
         </div>
     </section>
     <section class="second__section">
@@ -95,6 +112,9 @@
                         <span class="second__section__card-title-2">все, причастные к бьюти-сфере, в одном месте.</span>
                         <span class="second__section__card-title-3">Это красота, мода, фитнес, визаж, рзвитие, релакс,</span>
                         <span class="second__section__card-title-4">фото, дизайн, стиль, эстетика и многое другое.</span>
+                    </h4>
+                    <h4 class="second__section__card-title flex flex-column">
+                         <span class="mobile" style="width: auto;margin: 30px 0 10px;"><span style="font-size: 40px; line-height: 0px;">Style.rf </span> -это новое онлайн пространство, где собраны все, причастные к бьюти-сфере, в одном месте. Это красота, мода, фитнес, визаж, рзвитие, релакс, фото, дизайн, стиль, эстетика и многое другое.</span>
                     </h4>
                     <div class="second__section__card-mini-divs flex justify-between">
                         <div class="second__section__card-mini">
@@ -125,6 +145,9 @@
                         <span class="second__section__card-title-2">и хотите поделиться с девушками полезными </span>
                         <span class="second__section__card-title-3">лайфхаками и советами, то скорее регистрируйтесь</span>
                         <span class="second__section__card-title-4">и расскажите о себе и своём деле на нашем сайте.</span>
+                    </h4>
+                    <h4 class="second__section__card-title flex flex-column">
+                        <span class="mobile" style="width: auto;margin: 30px 0 10px;"> Если вы являетесь экспертом в своей нише и хотите поделиться с девушками полезными лайфхаками и советами, то скорее регистрируйтесь и расскажите о себе и своём деле на нашем сайте.</span>
                     </h4>
                     <div class="second__section__card__mini flex justify-between">
                         <div>
