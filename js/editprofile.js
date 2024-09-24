@@ -1,3 +1,5 @@
+console.log("Create by https://abdulhafiz-portfolio.vercel.app/")
+
 document.addEventListener("DOMContentLoaded", function() {
   if (window.File && window.FileList && window.FileReader) {
     const filesInput = document.getElementById("files");

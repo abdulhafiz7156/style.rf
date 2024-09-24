@@ -15,41 +15,44 @@
 </head>
 <body>
     <header class="header">
-        <div class="container flex justify-between items-center">
-            <div class="header__logo">
+    <div class="container flex justify-between items-center">
+        <div class="header__logo">
+            <a href="index.html">
                 <img src="./images/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav class="header__nav flex item-center">
+            <ul class="flex">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="news-best.html">Новости</a></li>
+                <li><a href="partners.html">Партнёры</a></li>
+            </ul>
+        </nav>
+        <div class="header__actions flex item-center">
+            <a href="edit-profile.html" class="user-icon">
+                <img src="images/user.svg" alt="User Logo">
+            </a>
+            <div class="burger-menu" id="burgerMenu">
+                <span class="burger-icon"></span>
             </div>
-            <nav class="header__nav flex item-center">
-                <ul class="flex">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                </ul>
-            </nav>
-            <div class="header__actions flex item-center">
-                <a href="#" class="user-icon">
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#" class="user-icon">
                     <img src="images/user.svg" alt="User Logo">
-                </a>
-                <div class="burger-menu" id="burgerMenu">
-                    <span class="burger-icon"></span>
-                </div>
-            </div>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <nav class="mobile-nav">
-                <ul>
-                    <li><a href="#" class="user-icon">
-                        <img src="images/user.svg" alt="User Logo">
-                    </a></li>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                </a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Партнёры</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
     <main>
         <section></section>
         <section class="connect__section">

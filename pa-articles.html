@@ -16,50 +16,53 @@
 </head>
 <body>
     <header class="header">
-        <div class="container flex justify-between items-center">
-            <div class="header__logo">
+    <div class="container flex justify-between items-center">
+        <div class="header__logo">
+            <a href="index.html">
                 <img src="./images/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav class="header__nav flex item-center">
+            <ul class="flex">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="news-best.html">Новости</a></li>
+                <li><a href="partners.html">Партнёры</a></li>
+            </ul>
+        </nav>
+        <div class="header__actions flex item-center">
+            <a href="edit-profile.html" class="user-icon">
+                <img src="images/user.svg" alt="User Logo">
+            </a>
+            <div class="burger-menu" id="burgerMenu">
+                <span class="burger-icon"></span>
             </div>
-            <nav class="header__nav flex item-center">
-                <ul class="flex">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                </ul>
-            </nav>
-            <div class="header__actions flex item-center">
-                <a href="#" class="user-icon">
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#" class="user-icon">
                     <img src="images/user.svg" alt="User Logo">
-                </a>
-                <div class="burger-menu" id="burgerMenu">
-                    <span class="burger-icon"></span>
-                </div>
-            </div>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <nav class="mobile-nav">
-                <ul>
-                    <li><a href="#" class="user-icon">
-                        <img src="images/user.svg" alt="User Logo">
-                    </a></li>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                </a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Партнёры</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
     <main>
         <div class="pa__title container text-center">
             <h3 class="title">Личный кабинет</h3>
             <div class="flex flex-column justify-center" style="gap: 10px">
-                <button class="button__without__bg btn">РЕДАКТИРОВАТЬ ПРОФИЛЬ</button>
+                <button class="button__without__bg btn"><a href="edit-profile.html" style="color: #C62925">РЕДАКТИРОВАТЬ ПРОФИЛЬ</a></button>
                 <div class="flex justify-center" style="gap: 20px;">
-                    <button class="button__without__bg active__pa__btn">МОИ СТАТЬИ</button>
-                    <button class="button__without__bg">ОТЗЫВЫ ОБО МНЕ</button>
-                    <button class="button__without__bg">ИЗБРАННОЕ</button>
+                    <button class="button__without__bg navigation__link active__pa__btn"><a href="pa-articles.html" style="color: rgba(198, 41, 37, 1)">МОИ СТАТЬИ</a></button>
+                    <button class="button__without__bg navigation__link"><a href="comments.html" style="color: rgba(198, 41, 37, 1)">ОТЗЫВЫ ОБО МНЕ</a></button>
+                    <button class="button__without__bg navigation__link"><a href="pa-favorite-articles.html" style="color: rgba(198, 41, 37, 1)">ИЗБРАННОЕ</a></button>
                 </div>
             </div>
         </div>

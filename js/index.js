@@ -1,6 +1,7 @@
 const slider = document.querySelector('.articles__block__cards');
 const prevButton = document.querySelector('.slider-button.prev');
 const nextButton = document.querySelector('.slider-button.next');
+console.log("Create by https://abdulhafiz-portfolio.vercel.app/")
 
 function updateButtonVisibility() {
   if (slider.scrollLeft > 0) {
@@ -59,3 +60,4 @@ closeButton.addEventListener('click', () => {
   content.style.display = 'none'
   status = false
 })
+

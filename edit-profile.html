@@ -20,18 +20,20 @@
 <header class="header">
   <div class="container flex justify-between items-center">
     <div class="header__logo">
-      <img src="./images/logo.svg" alt="Logo">
+      <a href="index.html">
+        <img src="./images/logo.svg" alt="Logo">
+      </a>
     </div>
     <nav class="header__nav flex item-center">
       <ul class="flex">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Статьи</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Партнёры</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="articles.html">Статьи</a></li>
+        <li><a href="news-best.html">Новости</a></li>
+        <li><a href="partners.html">Партнёры</a></li>
       </ul>
     </nav>
     <div class="header__actions flex item-center">
-      <a href="#" class="user-icon">
+      <a href="edit-profile.html" class="user-icon">
         <img src="images/user.svg" alt="User Logo">
       </a>
       <div class="burger-menu" id="burgerMenu">
@@ -53,15 +55,16 @@
     </nav>
   </div>
 </header>
+
 <main>
   <section class="container">
     <h1 class="title text-center main__title">ЛИЧНЫЙ КАБИНЕТ</h1>
     <div class="navigation">
       <button class="button__without__bg edit__profile">РЕДАКТИРОВАТЬ ПРОФИЛЬ</button>
       <div class="navigation__list">
-        <button class="button__without__bg navigation__link">МОИ СТАТЬИ</button>
-        <button class="button__without__bg navigation__link">ОТЗЫВЫ ОБО МНЕ</button>
-        <button class="button__without__bg navigation__link">ИЗБРАННОЕ</button>
+        <button class="button__without__bg navigation__link"><a href="pa-articles.html" style="color: rgba(198, 41, 37, 1)">МОИ СТАТЬИ</a></button>
+        <button class="button__without__bg navigation__link"><a href="comments.html" style="color: rgba(198, 41, 37, 1)">ОТЗЫВЫ ОБО МНЕ</a></button>
+        <button class="button__without__bg navigation__link"><a href="pa-favorite-articles.html" style="color: rgba(198, 41, 37, 1)">ИЗБРАННОЕ</a></button>
       </div>
     </div>
   </section>
