@@ -35,3 +35,21 @@ slider.addEventListener('scroll', updateButtonVisibility);
 // Initial check to set button visibility
 updateButtonVisibility();
 
+
+// filter
+let status = false
+const button = document.querySelector('.search__filter-btn')
+const content = document.querySelector('.search__popup')
+
+
+
+button.addEventListener('click', ()=> {
+  if (status === false) {
+    content.style.display = 'block'
+    status = true
+  } else {
+    content.style.display = 'none'
+    status = false
+
+  }
+})
