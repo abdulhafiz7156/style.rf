@@ -7,9 +7,20 @@
 }
 
 .edit__profile {
+  font-family: 'Playfair Display' !important;
+  font-weight: 500;
   background-color: white !important;
-  padding: 10px 80px !important;
-  border-radius: 50px !important;
+  max-width: 486px !important;
+  width: 100% !important;
+  height: 54px;
+}
+
+.navigation__link {
+  font-family: 'Playfair Display' !important;
+  font-weight: 500;
+  max-width: 233px;
+  width: 237px !important;
+  height: 54px;
 }
 
 .navigation__list {
@@ -23,7 +34,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .user-photo {
