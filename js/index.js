@@ -35,11 +35,3 @@ slider.addEventListener('scroll', updateButtonVisibility);
 // Initial check to set button visibility
 updateButtonVisibility();
 
-
-// it is code of header menu burger
-
-document.getElementById('burgerMenu').addEventListener('click', function () {
-    this.classList.toggle('active');
-    document.getElementById('mobileMenu').classList.toggle('active');
-});
-// it is code of header menu burger

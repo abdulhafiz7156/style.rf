@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="./css/media.css">
-    <title>Продукт</title>
+    <link rel="stylesheet" href="./css/product.css">
+    <title>Личный кабинет</title>
 </head>
 <body>
     <header class="header">
@@ -52,6 +52,36 @@
         </div>
     </header>
     <main>
+        <div class="pa__title container text-center">
+            <h3 class="title">Личный кабинет</h3>
+            <div class="flex flex-column justify-center" style="gap: 10px">
+                <button class="button__without__bg btn">РЕДАКТИРОВАТЬ ПРОФИЛЬ</button>
+                <div class="flex justify-center" style="gap: 20px;">
+                    <button class="button__without__bg active__pa__btn">МОИ СТАТЬИ</button>
+                    <button class="button__without__bg">ОТЗЫВЫ ОБО МНЕ</button>
+                    <button class="button__without__bg">ИЗБРАННОЕ</button>
+                </div>
+            </div>
+        </div>
+        <div class="container relative">
+            <div class="articles__controls__child flex item-center justify-between relative">
+                <input type="text" class="search-input default__input">
+                <button class="filter-btn" id="openPopup"><img src="./images/filter-icon.svg" alt=""></button>
+            </div>
+            <div class="popup" id="popup">
+                <div class="popup-content text-left flex justify-center item-center flex-column">
+                    <button class="close-btn" id="closePopup">&times;</button>
+                    <div class="flex flex-column">
+                        <h2>Сортировать:</h2>
+                        <label><input type="checkbox" name="category1"> По колличеству просмотров</label>
+                        <label><input type="checkbox" name="category2"> По колличеству лайков</label>
+                        <label><input type="checkbox" name="category3"> По автору</label>
+                        <label><input type="checkbox" name="category4"> От новых к старым</label>
+                        <label><input type="checkbox" name="category4"> От старых к новым</label>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="product__section container">
             <div class="product__img relative">
                 <p>Культовый в своем роде: Dior Addict Lip Maximizer в оттенке 001 Pink</p>
@@ -224,8 +254,100 @@
             Все права защищены. Полное или частичное копирование материалов сайта без согласования с редакцией запрещено.
         </p>
     </footer>
+
+    <style>
+        .pa__title button{
+            font-family: "Playfair Display";
+            width: 233px;
+            height: 54px;
+            font-size: 22px;
+        }
+
+        .pa__title .btn{
+            font-family: "Playfair Display";
+            width: 400px;
+            height: 54px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .pa__title .title {
+            margin-top: 30px;
+        }
+        .popup-content div {
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+        /* Стили для Popup */
+        .popup {
+            display: none;
+            position: absolute;
+            z-index: 1000;
+            width: 300px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            right: 0;
+            top: 80px;
+        }
+
+        .popup-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+
+        .search-input {
+            flex: 1;
+            background-image: url("./images/search.svg");
+            background-repeat: no-repeat;
+            padding-left: 50px !important;
+            background-position: 10px center;
+        }
+
+        .filter-btn {
+            flex: 0 0 5%; /* 5% ширины */
+            background-color: transparent;
+        }
+
+        .articles__controls__child {
+            margin-top: 20px;
+        }
+
+    </style>
+
     <script src="js/index.js"></script>
     <script src="./js/menu-burger.js"></script>
+    <script>
+        // popup js code
+        document.getElementById('openPopup').addEventListener('click', function(event) {
+            const popup = document.getElementById('popup');
 
+            // Проверяем текущее состояние и переключаем видимость
+            if (popup.style.display === 'none' || popup.style.display === '') {
+                popup.style.display = 'block';
+            } else {
+                popup.style.display = 'none';
+            }
+        });
+
+        document.getElementById('closePopup').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'none';
+        });
+
+        // popup js code
+
+    </script>
 </body>
 </html>

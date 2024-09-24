@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Inter:wght@400;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <style>
         .news__title__btns button {
@@ -51,7 +52,7 @@
             border-radius: 50px;
         }
 
-        .news__title button{
+        .news__title button {
             border-radius: 50px;
             height: 54px;
         }
@@ -60,111 +61,112 @@
     <title>Новости свежее</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container flex justify-between items-center">
-            <div class="header__logo">
-                <img src="./images/logo.svg" alt="Logo">
+<header class="header">
+    <div class="container flex justify-between items-center">
+        <div class="header__logo">
+            <img src="./images/logo.svg" alt="Logo">
+        </div>
+        <nav class="header__nav flex item-center">
+            <ul class="flex">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Партнёры</a></li>
+            </ul>
+        </nav>
+        <div class="header__actions flex item-center">
+            <a href="#" class="user-icon">
+                <img src="images/user.svg" alt="User Logo">
+            </a>
+            <div class="burger-menu" id="burgerMenu">
+                <span class="burger-icon"></span>
             </div>
-            <nav class="header__nav flex item-center">
-                <ul class="flex">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                </ul>
-            </nav>
-            <div class="header__actions flex item-center">
-                <a href="#" class="user-icon">
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#" class="user-icon">
                     <img src="images/user.svg" alt="User Logo">
-                </a>
-                <div class="burger-menu" id="burgerMenu">
-                    <span class="burger-icon"></span>
-                </div>
+                </a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Партнёры</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="news container">
+        <div class="news__title text-center">
+            <h2 class="title">НОВОСТИ</h2>
+            <div class="news__title__btns flex">
+                <button class="button__without__bg">СВЕЖЕЕ</button>
+                <button class="button__with__bg">ЛУЧШЕЕ</button>
             </div>
         </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <nav class="mobile-nav">
-                <ul>
-                    <li><a href="#" class="user-icon">
-                        <img src="images/user.svg" alt="User Logo">
-                    </a></li>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                </ul>
-            </nav>
+        <div class="news__cards flex flex-column">
+            <div class="news__card">
+                <p>Осенняя коллекция Dior Map of Paris Makeup Collection Fall 2024</p>
+                <img src="images/news__card3.png" alt="">
+                <button class="button__without__bg">Читать</button>
+            </div>
+            <div class="news__card">
+                <p>Новые коллекции от Givenchy и Byredo</p>
+                <img src="images/news__card4.png" alt="">
+                <button class="button__without__bg">Читать</button>
+            </div>
+            <div class="news__card">
+                <p>Летняя сказка от Flowerknows</p>
+                <img src="images/news__card5.png" alt="">
+                <button class="button__without__bg">Читать</button>
+            </div>
         </div>
-    </header>
-    <main>
-        <section class="news container">
-            <div class="news__title text-center">
-                <h2 class="title">НОВОСТИ</h2>
-                <div class="news__title__btns flex">
-                    <button class="button__without__bg">СВЕЖЕЕ</button>
-                    <button class="button__with__bg">ЛУЧШЕЕ</button>
-                </div>
+    </section>
+    <section class="connect__section">
+        <div class="container flex flex-column">
+            <div class="connect__section__title flex">
+                <div></div>
+                <h1 class="title">Связаться <br>с нами</h1>
             </div>
-            <div class="news__cards flex flex-column">
-                <div class="news__card">
-                    <p>Осенняя коллекция Dior Map of Paris Makeup Collection Fall 2024</p>
-                    <img src="images/news__card3.png" alt="">
-                    <button class="button__without__bg">Читать</button>
-                </div>
-                <div class="news__card">
-                    <p>Новые коллекции от Givenchy и Byredo</p>
-                    <img src="images/news__card4.png" alt="">
-                    <button class="button__without__bg">Читать</button>
-                </div>
-                <div class="news__card">
-                    <p>Летняя сказка от Flowerknows</p>
-                    <img src="images/news__card5.png" alt="">
-                    <button class="button__without__bg">Читать</button>
-                </div>
-            </div>
-        </section>
-        <section class="connect__section">
-            <div class="container flex flex-column">
-                <div class="connect__section__title flex">
-                    <div></div>
-                    <h1 class="title">Связаться <br>с нами</h1>
-                </div>
-                <div class="connect__section__social__media__form flex">
-                    <div class="connect__section__social__media flex flex-column justify-between">
-                        <div>
-                            <p>Присоединяйтесь к нам в социльных сетях</p>
-                            <div class="flex">
-                                <a href=""><img src="./images/instagram.svg" alt=""></a>
-                                <a href=""><img src="./images/vk.svg" alt=""></a>
-                                <a href=""><img src="./images/telegram.svg" alt=""></a>
-                                <a href=""><img src="./images/facebook.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div>
-                            <p>Политика конфиденциальности</p>
-                            <p>Политика обработки файлов cookie</p>
+            <div class="connect__section__social__media__form flex">
+                <div class="connect__section__social__media flex flex-column justify-between">
+                    <div>
+                        <p>Присоединяйтесь к нам в социльных сетях</p>
+                        <div class="flex">
+                            <a href=""><img src="./images/instagram.svg" alt=""></a>
+                            <a href=""><img src="./images/vk.svg" alt=""></a>
+                            <a href=""><img src="./images/telegram.svg" alt=""></a>
+                            <a href=""><img src="./images/facebook.svg" alt=""></a>
                         </div>
                     </div>
-                    <div class="connect__section__form">
-                        <p>Пожалуйста, отправьте запрос, и мы свяжемся с вами как можно скорее.</p>
-                        <div class="flex flex-column">
-                            <label for="message" class="form-label">Чем мы можем вам помочь?</label>
-                            <textarea id="message" class="form-input large-input"></textarea>
-                            <label for="email" class="form-label">Ваш E-mail?</label>
-                            <input type="email" id="email" class="form-input small-input">
-                            <button type="submit" class="button__without__bg">Отправить</button>
-                        </div>
+                    <div>
+                        <p>Политика конфиденциальности</p>
+                        <p>Политика обработки файлов cookie</p>
+                    </div>
+                </div>
+                <div class="connect__section__form">
+                    <p>Пожалуйста, отправьте запрос, и мы свяжемся с вами как можно скорее.</p>
+                    <div class="flex flex-column">
+                        <label for="message" class="form-label">Чем мы можем вам помочь?</label>
+                        <textarea id="message" class="form-input large-input"></textarea>
+                        <label for="email" class="form-label">Ваш E-mail?</label>
+                        <input type="email" id="email" class="form-input small-input">
+                        <button type="submit" class="button__without__bg">Отправить</button>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="container">
-        <p>
-            © 2024 <br>
-            Все права защищены. Полное или частичное копирование материалов сайта без согласования с редакцией запрещено.
-        </p>
-    </footer>
+        </div>
+    </section>
+</main>
+<footer class="container">
+    <p>
+        © 2024 <br>
+        Все права защищены. Полное или частичное копирование материалов сайта без согласования с редакцией запрещено.
+    </p>
+</footer>
 <script src="js/index.js"></script>
+<script src="./js/menu-burger.js"></script>
 </body>
 </html>
