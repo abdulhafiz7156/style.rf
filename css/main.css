@@ -286,6 +286,10 @@ button {
     margin-top: 20px;
 }
 
+.connect__section__social__media__form a {
+    color: #1F1F1F;
+}
+
 .connect__section__form button {
     margin-top: 20px;
     width: 233px;
