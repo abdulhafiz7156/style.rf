@@ -11,10 +11,16 @@
           rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <style>
-        .news__title__btns button {
+        .news__title__btns a {
             width: 100%;
             height: auto;
+        }
+
+        .news__title__btns a button {
+            width: 100%;
             font-family: Playfair Display;
+            border-radius: 50px;
+            height: 54px;
         }
 
         .news__title__btns {
@@ -51,11 +57,6 @@
             height: 51px;
             border-radius: 50px;
         }
-
-        .news__title button {
-            border-radius: 50px;
-            height: 54px;
-        }
     </style>
     <link rel="stylesheet" href="./css/media.css">
     <title>Новости свежее</title>
@@ -88,13 +89,13 @@
     <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-nav">
             <ul>
-                <li><a href="#" class="user-icon">
+                <li><a href="edit-profile.html" class="user-icon">
                     <img src="images/user.svg" alt="User Logo">
                 </a></li>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Партнёры</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="news-best.html">Новости</a></li>
+                <li><a href="partners.html">Партнёры</a></li>
             </ul>
         </nav>
     </div>
@@ -104,8 +105,8 @@
         <div class="news__title text-center">
             <h2 class="title">НОВОСТИ</h2>
             <div class="news__title__btns flex">
-                <button class="button__without__bg"><a href="news-newest.html" style="color: #C62925">СВЕЖЕЕ</a></button>
-                <button class="button__with__bg"><a href="news-best.html">ЛУЧШЕЕ</a></button>
+                <a href="news-newest.html" style="color: #C62925"><button class="button__without__bg">СВЕЖЕЕ</button></a>
+                <a href="news-best.html"><button class="button__with__bg">ЛУЧШЕЕ</button></a>
             </div>
         </div>
         <div class="news__cards flex flex-column">

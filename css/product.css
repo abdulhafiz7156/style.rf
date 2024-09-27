@@ -79,6 +79,10 @@
     margin-top: 20px;
 }
 
+.product__activity {
+    cursor: pointer;
+}
+
 .product__activities {
     display: grid;
     grid-template-columns: 1fr 2fr;
