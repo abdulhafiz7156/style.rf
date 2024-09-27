@@ -54,6 +54,10 @@
   top: 2px;
 }
 
+.change__image > label{
+  cursor: pointer;
+}
+
 .form__field p {
   text-transform: uppercase;
   font-style: italic;
