@@ -52,3 +52,21 @@ document.addEventListener("DOMContentLoaded", function() {
     alert("Your browser doesn't support the File API");
   }
 });
+
+const UserImage = document.querySelector('.user-photo');
+const UserUploadInput = document.querySelector('#profile-image');
+
+UserUploadInput.addEventListener('change', (event) => {
+  const file = event.target.files[0];
+
+  if (file) {
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+      UserImage.src = e.target.result;  // Set the image src to the uploaded image's URL
+      console.log('Image uploaded and changed successfully');
+    };
+
+    reader.readAsDataURL(file);  // Read the uploaded file as a Data URL
+  }
+});
